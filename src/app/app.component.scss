@@ -1,0 +1,33 @@
+
+.center {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+}
+
+.blink_me {
+  animation: blinker 3s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+.center h1{
+  align-self: center;
+  font-size: larger;
+}
+
+.jumbotron{
+  background-image: url("../assets/img/demo_background.jpg");
+  background-size:100% 100%;
+  background-position: absolute;
+  background-repeat:repeat-y;
+  background-size: cover;
+  margin: 0px;
+  padding: 0px;
+ }
+
+
