@@ -1,0 +1,41 @@
+<div class="content bg-dark" style="width: 100%;">
+    <div class="text-center"> <img *ngIf="!address" src="assets/img/LOGO_WHITE.png"
+            style="width: 8vw; margin-left: 8vw;  margin-top: 1vw;" class="img-fluid" alt="">
+        <button *ngIf="!address" style="margin-top: 1.5vw; margin-right: 1.5vw; font-weight: lighter; " type="button"
+            (click)="connectMetamask()" class="btn btn-primary float-right shadow-none">
+            Connect Wallet
+        </button>
+        <img *ngIf="address" src="assets/img/LOGO_WHITE.png"
+            style="width: 8vw; margin-left: 22.5vw;  margin-top: 1vw;" class="img-fluid" alt="">
+        <button *ngIf="address" style="margin-top: 1.5vw; margin-right: 1.5vw; font-weight: lighter; " type="button"
+            (click)="connectMetamask()" class="btn btn-primary float-right shadow-none">
+            {{address}}
+        </button>
+    </div>
+
+    <mat-tab-group animationDuration="0ms" mat-align-tabs="center" flex>
+        <mat-tab label="DROPS" flex>
+            <ng-template matTabContent flex>
+                <app-drops></app-drops>
+            </ng-template>
+        </mat-tab>
+
+        <mat-tab label="COLLECTIONS">
+            <ng-template matTabContent>
+            </ng-template>
+        </mat-tab>
+
+        <mat-tab label="ARTISTS">
+            <ng-template matTabContent>
+                Ladka
+            </ng-template>
+        </mat-tab>
+
+        <mat-tab label="DOCUMENTATION">
+            <ng-template matTabContent>
+                Jaffada
+            </ng-template>
+        </mat-tab>
+
+    </mat-tab-group>
+</div>

@@ -1,0 +1,60 @@
+<body class="jumbotron">
+    <app-carousel></app-carousel>
+    <div class="container">
+
+        <!-- Card deck -->
+        <br>
+        <button style="margin-top: 0vw; font-weight: lighter; margin-left: 20.5vw; width: 30%; font-family: Bungee;"
+            type="button" class="btn btn-primary  shadow-none">
+            Fresh Drops
+        </button>
+
+        <div class="card-deck row">
+
+            <div *ngFor="let nft of drops" class="col-xs-12 col-sm-6 col-md-4">
+                <!-- Card -->
+                <div *ngIf="nft.external_data!=null" class="card">
+
+                    <!--Card image-->
+                    <div class="view overlay">
+                        <img class="card-img-top" src={{nft.external_data?.image}} alt="Card image cap">
+                        <a href="#!">
+                            <div class="mask rgba-white-slight"></div>
+                        </a>
+                    </div>
+
+                    <!--Card content-->
+                    <div class="card-body">
+
+                        <!--Title-->
+                        <p class="card-title category-title" style="font-family: Bungee; font-size: smaller; color:#777777; 
+                            align-items: center;
+                            margin-bottom: 0vw;
+                            text-align: center;">NEWMETA
+                            FOUNDERS</p>
+                        <!--Text-->
+                        <p style="font-family: Bungee; font-style: normal; font-size: 1vw; margin-bottom: 0vw;
+                        font-weight: normal; color:#FFFFFF; text-align: center;" class="card-text">PRODUCT - TITLE NAME
+                        </p>
+                        <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+                        <p style="font-family: Bungee; font-size: smaller; color:#777777; 
+                        align-items: center;
+                        margin-top: 0vw;
+                        text-align: center;">GENESIS EDITION - 50 PCS</p>
+                        <button style="margin-top: 0vw; font-weight: lighter; width: 100%; font-family: Bungee;"
+                            type="button" class="btn btn-primary float-center shadow-none">
+                            Buy
+                        </button>
+
+                    </div>
+
+                </div>
+                <!-- Card -->
+            </div>
+
+        </div>
+        <!-- Card deck -->
+
+    </div>
+    <app-intro></app-intro>
+</body>

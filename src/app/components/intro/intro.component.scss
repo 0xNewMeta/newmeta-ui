@@ -1,0 +1,21 @@
+.container {
+	padding: 2rem 0rem;
+  }
+  
+  h4 {
+	margin: 2rem 0rem 1rem;
+  }
+  
+  .table-image {
+	td, th {
+	  vertical-align: middle;
+	  border: none;
+	}
+  }
+
+  .btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+    background-color: #000000 !important;
+    border: none;
+    border-radius: 40px;
+    box-shadow: none;
+}
